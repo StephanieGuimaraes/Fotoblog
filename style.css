@@ -121,6 +121,8 @@ main h1{
     width: 100%;
     aspect-ratio: 16/9;
     object-fit: cover;
+    transition-property: transform;
+    transition-duration: 1s;
 }
 
 .item img:hover{
