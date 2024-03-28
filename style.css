@@ -127,7 +127,7 @@ main h1{
 
 .item img:hover{
     filter: hue-rotate(7deg) contrast(101%) saturate(200%);
-    transform: scale(1.1) rotate(-1deg);
+    transform: scale(1.1) rotate(-2deg);
 }
 
 .details {
