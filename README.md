@@ -1,2 +1,2 @@
 # Fotoblog
-Website for presenting images and photos
+Website for presenting images and photos for users.
