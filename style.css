@@ -123,6 +123,7 @@ main h1{
     object-fit: cover;
     transition-property: transform;
     transition-duration: 1s;
+    display: inline-block;
 }
 
 .item img:hover{
@@ -150,9 +151,35 @@ main h1{
     font-size: 1.2rem;
     text-transform: uppercase;
 }
+header{
+    animation: move .2;
+    --startY: -100%;
+}
 
 footer{
     text-align: center;
     padding: 1.6rem;
     font-weight: 600;
+    animation: move .2;
+    --startY: 100%;
+}
+.item{
+    --delay: .2s;
+    animation: appear .2s var(--delay) backwards;
+}
+
+@keyframes move{
+    from{
+        transform: translateY(var(--startY));
+    }
+}
+
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: scale(0.7);
+    }
+    50%{
+        transform: scale(1.05);
+    }
 }
